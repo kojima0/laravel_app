@@ -24,7 +24,7 @@ class TodoController extends Controller
      */
     public function index()
     {
-        $todos = $this->todo->getByUserId(Auth::id());  // 追記
+        $todos = $this->todo->getByUserId(Auth::id());
         return view('todo.index', compact('todos'));
     }
 
